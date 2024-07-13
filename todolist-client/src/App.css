@@ -1,0 +1,99 @@
+body{
+  background: url(./assets/f5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1{
+  text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 4px #000,0 0 9px #000;
+}
+
+input{
+  border: 1px solid rgb(207, 207, 207) !important;
+}
+
+.container{
+  width: 37%;
+  margin-top: 37px;
+}
+
+.listado-tareas{
+  height: 310px !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.descripcion{
+  overflow: hidden;
+}
+
+.descripcion span{
+  width: 100px !important;
+}
+
+.btn-complete{
+  background-image: linear-gradient(45deg, rgb(13, 86, 48), rgb(19, 187, 162));
+}
+
+.btn-danger{
+  background-image: linear-gradient(45deg, rgb(132, 0, 26),red) !important;
+}
+
+.btn-primary{
+  background-image: linear-gradient(45deg, rgb(0, 2, 132),rgb(0, 98, 255)) !important;
+}
+
+form, .list-group{
+  background-color: #ffffffb8;
+  box-shadow: 0 0 5px #505050 !important;
+}
+
+.list-group-item{
+  border: 1px solid rgb(207, 207, 207);
+}
+
+.modal-texto{
+  display: block;
+  white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Usar puntos suspensivos (...) si el texto es demasiado largo */
+}
+
+.footer{
+  user-select: none;
+}
+
+.footer p{
+  text-shadow: 0 0 1px #0000009a;
+}
+
+@media screen and (max-width:720px) {
+
+  .container{
+    width: 95%
+  }
+
+  .listado-tareas{
+    height: 290px !important;
+  }
+
+  form{
+    flex-direction: column;
+  }
+
+  .badge{
+    display: none;
+  }
+
+  .modal-content{
+    position: absolute;
+    top: 250px;
+  }
+}
+
+@media (max-width: 370px){
+  .container-tareas{
+    height: 410px;
+  }
+}
